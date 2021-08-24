@@ -1,7 +1,6 @@
-// Exp - 1.3 : Binary Phase Shift Keying Modulation
+% Exp - 1.3 : Binary Phase Shift Keying Modulation
 clc;
-closeall;
-clearall;
+close all;
 
 T=1;
 m=2;
@@ -34,7 +33,7 @@ ylabel('u0(f),db/hz');
 title('POWER SPECTRAL DENSITY USING WELCH METHOD');
 
 figure(3)
-y=psd(u0);
+y=periodogram(u0);
 plot(y);
 xlabel('FREQUENCY,f(hz)');
 ylabel('u0(f),watts/hz');
@@ -58,24 +57,3 @@ xlabel('n-->');
 ylabel('c(t)');
 title('carrier signal');
 gridon;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

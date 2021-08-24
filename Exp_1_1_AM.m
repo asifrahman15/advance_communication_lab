@@ -1,7 +1,6 @@
-// Exp - 1.1 : Amplitude Modulation
+% Exp - 1.1 : Amplitude Modulation
 clc;
-closeall;
-clearall;
+close all;
 
 n=1000;
 fm=300;

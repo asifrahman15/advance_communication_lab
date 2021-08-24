@@ -1,7 +1,6 @@
-// Exp - 1.4 :  Quadrature Phase Shift Keying Modulation
+% Exp-1.4: Quadrature Phase Shift Keying Modulation
 clc;
-closeall;
-clearall;
+close all;
 
 %GENERATE THE CARRIER SIGNAL
 tb=1;
@@ -36,34 +35,34 @@ stem(m);
 xlabel('N');
 ylabel('B(N)');
 title('BINARY DATABITS');
-gridon;
-holdon;
+grid on;
+hold on;
 
 subplot(5,1,2);
-axis([0 n-2 2]);
+axis([0 n -2 2]);
 plot(t,message(i,:),'r');
 xlabel('t-->');
 ylabel('m(t)');
 title('MESSAGE SIGNAL(POLAR FORM)');
-gridon;
-holdon;
+grid on;
+hold on;
 
 subplot(5,1,3);
-axis([0 n-2 2]);
+axis([0 n -2 2]);
 plot(t,c);
 xlabel('n-->');
 ylabel('c(t)');
 title('CARRIER SIGNAL');
-gridon;
-holdon;
+grid on;
+hold on;
 
 subplot(5,1,4);
 plot(t,bpsk_sig(i,:),'y');
 xlabel('t-->');
 ylabel('s(t)');
 title('BPSK SIGNAL');
-gridon;
-holdon;
+grid on;
+hold on;
 
 fs=1000;
 figure(2);
@@ -75,7 +74,7 @@ ylabel('bpsk_sig,db/hz');
 title('POWER SPECTRAL DENSITY USING WELCH METHOD');
 
 figure(3);
-  y=psd(bpsk_sig(i,:));
+  y=periodogram(bpsk_sig(i,:));
 plot(y);
 xlabel('FREQUENCY,f(hz)');
 ylabel('bpsk_sig,watts/hz');

@@ -1,4 +1,5 @@
-// Exp - 2.3 : Band Pass Filter
+% Exp - 2.3 : Band Pass Filter
+
 clc;
 f=0:100:5000;
 f1=1000;

@@ -1,4 +1,5 @@
 % Exp - 2.4 : Band Stop Filter
+
 clc;
 f=0:100:5000;
 f1=1000;

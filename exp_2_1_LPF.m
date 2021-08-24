@@ -1,4 +1,4 @@
-// Exp - 2.1 : Low Pass Filter
+% Exp - 2.1 : Low Pass Filter
 clc;
 f=0:100:5000;
 fc=2000;

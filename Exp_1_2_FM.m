@@ -1,7 +1,6 @@
-// Exp - 1.2 : Frequency Modulation
+% Exp - 1.2 : Frequency Modulation
 clc;
-closeall;
-clearall;
+close all;
 
 fs=input('ENTER THE SAMPLING FREQUENCY:');
 fC=input('ENTER THE CARRIER FREQUENCY:');
